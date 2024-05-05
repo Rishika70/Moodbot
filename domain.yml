@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+
+responses:
+  utter_greet: 
+  - text: "नमस्ते! कैसे हैं? मैं यहाँ हूँ आपकी सहायता के लिए। कैसी चल रही है आपकी दिनचर्या?"
+
+  utter_cheer_up:
+  - text: "हाय! दिन खराब है क्या? यहाँ कुछ ताजगी भरी चीज़ है आपके लिए:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+  - text: "क्या इससे आपका मनोबल बढ़ा?"
+
+  utter_did_that_help:
+  - text: "क्या इससे आपका मनोबल बढ़ा?"
+
+  utter_happy:
+  - text: "बढ़िया! कैसी मदद चाहिए?"
+
+  utter_goodbye:
+  - text: "अलविदा! कोई और सहायता चाहिए, तो बस बताइए।"
+
+  utter_iamabot:
+  - text: "मैं एक बॉट हूँ, लेकिन आपकी सहायता के लिए यहाँ हूँ।"
+  - text: "हाँ, मैं एक बॉट हूँ, लेकिन अपने सवालों का जवाब देने में मेरी खुशी है।"
+  - text: "हाँ, मैं एक बॉट हूँ, लेकिन मेरी कोशिश रहेगी कि आपको जो सहायता चाहिए वह मिले।"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
