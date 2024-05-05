@@ -1,0 +1,4 @@
+docker
+rasa
+spacy 
+tensorflow
